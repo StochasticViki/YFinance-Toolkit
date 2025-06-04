@@ -40,12 +40,7 @@ A comprehensive desktop application for financial data analysis, featuring beta 
 
 ## 📦 Installation
 
-### Option 1: Download Executable (Recommended)
-1. Download the latest release from the [Releases](../../releases) page
-2. Extract the ZIP file to your desired location
-3. Run `YFinanceToolkit.exe`
-
-### Option 2: Run from Source
+### Run from Source
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/yfinance-toolkit.git
