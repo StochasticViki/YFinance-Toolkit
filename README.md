@@ -40,6 +40,21 @@ A comprehensive desktop application for financial data analysis, featuring beta 
 
 ## 📦 Installation
 
+## 🔧 Dependencies
+
+- `yfinance` - Yahoo Finance data fetching
+- `pandas` - Data manipulation
+- `numpy` - Numerical computations
+- `openpyxl` - Excel file handling
+- `customtkinter` - Modern GUI framework
+- `selenium` - Web automation for enhanced search
+- `beautifulsoup4` - HTML parsing
+
+```bash
+# Install dependencies
+pip install yfinance==0.2.18 pandas==2.0.3 numpy==1.24.3 openpyxl==3.1.2 customtkinter==5.2.0 selenium==4.15.0 beautifulsoup4==4.12.2 webdriver-manager==4.0.1
+```
+
 ### Run from Source
 ```bash
 # Clone the repository
@@ -52,16 +67,6 @@ pip install -r requirements.txt
 # Run the application
 python __main__.py
 ```
-
-## 🔧 Dependencies
-
-- `yfinance` - Yahoo Finance data fetching
-- `pandas` - Data manipulation
-- `numpy` - Numerical computations
-- `openpyxl` - Excel file handling
-- `customtkinter` - Modern GUI framework
-- `selenium` - Web automation for enhanced search
-- `beautifulsoup4` - HTML parsing
 
 ## 📖 Usage Guide
 
