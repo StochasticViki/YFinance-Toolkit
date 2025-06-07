@@ -49,10 +49,16 @@ A comprehensive desktop application for financial data analysis, featuring beta 
 - `customtkinter` - Modern GUI framework
 - `selenium` - Web automation for enhanced search
 - `beautifulsoup4` - HTML parsing
+- `Google Chrome (The Browser)` - For Browsing Using Chromedriver
 
 ### Install dependencies
 ```bash
-pip install yfinance==0.2.18 pandas==2.0.3 numpy==1.24.3 openpyxl==3.1.2 customtkinter==5.2.0 selenium==4.15.0 beautifulsoup4==4.12.2 webdriver-manager==4.0.1
+pip install yfinance pandas numpy openpyxl customtkinter selenium beautifulsoup4 webdriver-manager
+```
+
+### Install Google Chrome 
+```bash
+https://www.google.com/chrome/
 ```
 
 ### Run from Source
