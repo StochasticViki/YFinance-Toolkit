@@ -216,13 +216,13 @@ class search_screener:
             quote_div = li.find("div", class_=lambda x: x and "quoteSymbol" in x)
             if quote_div:
                 ticker = quote_div.get_text(strip=True)
-                
 
-            self.result_dict.append({
-                    "ticker": ticker,
-                    "name": company_name,
-                })
-
+                self.result_dict.append({
+                        "ticker": ticker,
+                        "name": company_name,
+                    })
+            else:
+                pass
         # for name in names:
         #     try:
         #         if name.text.strip() and "Search everywhere" not in name.text:
