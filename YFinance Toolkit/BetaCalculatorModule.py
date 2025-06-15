@@ -263,6 +263,8 @@ def generate_beta(ticker, start_date, end_date):
 
     for colum in range(2, 5):
         sheet.cell(row=2, column= colum).border = Underline
+    
+    del ticker[0]
 
     wb.save(f"{base_path}/BetaReport.xlsx")
 
@@ -446,7 +448,7 @@ def generate_volatility(ticker, start_date, end_date):
             
             firstcell = excel_reference(7,n)
             lastcell = excel_reference(sheet.max_row-1,n)
-            ref= f"=(STDEV({firstcell}:{lastcell})*SQRT(242))"
+            ref= f"=(STDEV({firstcell}:{lastcell})*SQRT(252))"
 
             sheet.cell(row=4, column= n).value = ref
             sheet.cell(row=4, column= n).data_type = "f"

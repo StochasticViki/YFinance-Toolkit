@@ -216,49 +216,9 @@ class search_screener:
             quote_div = li.find("div", class_=lambda x: x and "quoteSymbol" in x)
             if quote_div:
                 ticker = quote_div.get_text(strip=True)
+                
 
                 self.result_dict.append({
                         "ticker": ticker,
                         "name": company_name,
                     })
-            else:
-                pass
-        # for name in names:
-        #     try:
-        #         if name.text.strip() and "Search everywhere" not in name.text:
-        #             results.append(name.text)
-        #     except StaleElementReferenceException:
-        #         continue
-        
-        # for item in results:
-        #     parts = item.split('\n')
-        #     if len(parts) == 4:
-        #         self.result_dict.append({
-        #             "ticker": parts[0],
-        #             "name": parts[1],
-        #             "instrument_type": parts[2],
-        #             "exchange": parts[3]
-        #         })
-               
-  
-# instance = search_screener(download_path)
-
-# rel = instance.search("hindal")
-# print(instance.result_dict)
-# rel = instance.search("reliance")
-# print(instance.result_dict)
-
-
-# print("d")
-# instance.click_suggestion(rel[0])
-# instance.co_page()    
-
-# fromdate = "31/03/2020"
-# todate = "31/03/2025"
-
-
-
-# company = instance.company
-# print(company)
-# print(instance.topratios)
-# time.sleep(5)

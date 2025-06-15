@@ -46,6 +46,7 @@ window = ctk.CTk()
 window.title(title)
 window.geometry("700x700")
 window.resizable(False, False)
+
 # Global variable to track loading state
 selected_tickers = []
 loading = False
@@ -101,9 +102,6 @@ def message_window(msg, title):
 
     btn = ctk.CTkButton(err_window, text="OK", command=err_window.destroy)
     btn.pack(pady=(0, 30))
-
-
-
 
 def calc_button_function():
     if not selected_tickers:
@@ -246,12 +244,18 @@ def threaded_suggestions():
                 # Name label (left)
                 name_label = tk.Label(row_frame, text=co["name"], bg=row_frame["bg"], fg="white", anchor="w", padx=10)
                 name_label.pack(side="left", fill="x", expand=True)
-
+                
                 # Small "+" button (right)
                 add_button = tk.Button(row_frame, text="+", width=2, height=1, bg="#444", fg="white", relief="flat", command=lambda t=co["ticker"]: add_ticker(t))
                 add_button.pack(side="right", padx=10, pady=2)                     
+                
+                # Ticker label (right)
+                ticker_label = tk.Label(row_frame, text=co["ticker"], bg=row_frame["bg"], fg="white", anchor="e", padx=10)
+                ticker_label.pack(side="right", fill="x", expand=True)
+
+
             # # Position the suggestion box directly below search bar
-            suggestion_frame.place(y=132, x=20, width=640, height=200)
+            suggestion_frame.place(rely=0.38, relx=0.017, width=640, height=200)
         
     window.after(0, update_ui)  # Run UI update in main thread
 
@@ -286,9 +290,10 @@ app_title.place(x=20, y=15)
 search_text = ctk.CTkLabel(mainframe, text="Search for a company", font=FONT_SUBHEADING, text_color=SECONDARY_TEXT)
 search_text.place(x=20, y=50)
 
+
 # Create search bar with a modern look
 search_frame = ctk.CTkFrame(mainframe, width=640, height=46, corner_radius=BORDER_RADIUS, fg_color=DARK_BG, border_width=1, border_color=ACCENT_COLOR)
-search_frame.place(x=20, y=85)
+search_frame.place(x=10, y=85)
 
 search_icon = ctk.CTkLabel(search_frame, text="🔍", font=("Segoe UI", 20))
 search_icon.place(x=10, y=10)
