@@ -173,7 +173,7 @@ def calc_button_function():
             return
         
         if not to_dt > from_dt:
-            message_window(("From date cannot be greater than To Date.", 1))
+            message_window("From date cannot be greater than To Date.", 1)
             return
         # If all valid, call generate
         if selected == "Beta":
