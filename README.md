@@ -21,7 +21,7 @@ A comprehensive desktop application for financial data analysis, featuring beta 
 - Handles missing data with intelligent fill-forward
 
 ### Volatility Analysis
-- Computes annualized volatility using 242 trading days
+- Computes annualized volatility using 252 trading days
 - Standard deviation-based calculation
 - Professional formatting with sigma notation
 
