@@ -53,7 +53,7 @@ A comprehensive desktop application for financial data analysis, featuring beta 
 
 ### Install dependencies
 ```bash
-py -m pip install yfinance pandas numpy openpyxl customtkinter selenium beautifulsoup4 webdriver-manager
+python -m pip install yfinance pandas numpy openpyxl customtkinter selenium beautifulsoup4 webdriver-manager
 ```
 
 ### Install Google Chrome 
